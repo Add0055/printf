@@ -1,83 +1,21 @@
-# printf
-The Project consists of normal functions, derived functions a man page and a README.md file.
-
-This produces output according to a format specifiers,as shown below.
-
-       _printf("Length:[%d, %i]\n", len, len);
-
-
-	printf("Length:[%d, %i]\n", len2, len2);
+# Printf()
+-------------------------------------------------------------------------------------
+The aim of this project is to design and implement a function similar to the standard library's ``printf()``.
+Files contained in this directory include:
+  * ## main.h
+    - This is the header file containing function prototypes and macro definitions used across this project.
   
+  * ## printchar
+      - This is a helper function that prints a character when the ``%c`` format specification is used.  
+  * ## _putchar
+    - This is a function that prints out a character specified by the argument char to stdout.
+    - ### Declaration: 
+       ``int _putchar(char c)``
+    - ### Parameters:
+       ``char c`` is the character to be written.
+    - ### Return
+       The function returns the character to be printed to std out, it returns an EOF upon error.
+   
+   
+      
   
-	_printf("Negative:[%d]\n", -762534);
-  
-  
-	printf("Negative:[%d]\n", -762534);
-  
-  
-	_printf("Unsigned:[%u]\n", ui);
-  
-  
-	printf("Unsigned:[%u]\n", ui);
-  
-  
-	_printf("Unsigned octal:[%o]\n", ui);
-  
-  
-	printf("Unsigned octal:[%o]\n", ui);
-  
-  
-	_printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-  
-  
-	printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-  
-  
-	_printf("Character:[%c]\n", 'H');
-  
-  
-	printf("Character:[%c]\n", 'H');
-  
-  
-	_printf("String:[%s]\n", "I am a string !");
-  
-  
-	printf("String:[%s]\n", "I am a string !");
-  
-  
-	_printf("Address:[%p]\n", addr);
-  
-  
-	printf("Address:[%p]\n", addr);
-  
-  
-	len = _printf("Percent:[%%]\n");
-  
-  
-	len2 = printf("Percent:[%%]\n");
-  
-  
-	_printf("Len:[%d]\n", len);
-  
-  
-	printf("Len:[%d]\n", len2);
-  
-  
-	_printf("Unknown:[%r]\n");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-It is developed by **Gizaw** and **Adane** 
